@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Sedona</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
@@ -15,18 +16,18 @@
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="main-nav__list">
+      <ul class="main-nav__list clear-list">
         <li class="main-nav__item">
-          <a href="index.html" class="main-nav__link">Главная</a>
+          <a href="index.html" class="main-nav__link link">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a href="gallery.html" class="main-nav__link">Фото и видео</a>
+          <a href="gallery.html" class="main-nav__link link">Фото и видео</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--active">Форма отзыва</a>
+          <a class="main-nav__link main-nav__link--active link">Форма отзыва</a>
         </li>
         <li class="main-nav__item">
-          <a href="https://htmlacademy.ru/" class="main-nav__link"> Html Academy</a>
+          <a href="https://htmlacademy.ru/" class="main-nav__link link"> Html Academy</a>
         </li>
       </ul>
     </nav>
@@ -39,12 +40,12 @@
         а также о посещенных вами достопримечательностях</p>
     </section>
 
-    <section class="rewiew-section">
+    <section class="review-section">
       <h2 class="visually-hidden">Форма отзыва</h2>
-      <form class="rewiew-section__form form-review" action="https://echo.htmlacademy.ru" method="get">
+      <form class="review-section__form form-review" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="form-review__item impression">
           <legend class="form-review__title">Ваше общее впечатление:</legend>
-          <ul class="impression__list">
+          <ul class="impression__list clear-list">
             <li class="impression__item radio-field">
               <input class="radio-field__input" type="radio" name="impression" id="impression" value="positive" checked>
               <label class="radio-field__label" for="impression">Скорее положительное</label>
@@ -62,7 +63,7 @@
 
         <fieldset class="form-review__item fullname">
           <legend class="form-review__title">Представьтесь:</legend>
-          <ul class="fullname__list">
+          <ul class="fullname__list clear-list">
             <li class="fullname__item text-field">
               <label class="text-field__label" for="firstname">Имя*</label>
               <input class="text-field__input" type="text" name="firstname" id="firstname" placeholder="Петр">
@@ -81,7 +82,7 @@
 
         <fieldset class="form-review__item contacts">
           <legend class="form-review__title">Контактная информация:</legend>
-          <ul class="contacts__list">
+          <ul class="contacts__list clear-list">
             <li class="contacts__item text-field">
               <label class="text-field__label" for="phone">Телефон*</label>
               <input class="text-field__input" type="tel" name="phone" id="phone" placeholder="Введите телефон">
@@ -95,7 +96,7 @@
 
         <fieldset class="form-review__item sightseens">
           <legend class="form-review__title">Посещенные достопримечательности:</legend>
-          <ul class="sightseens__list">
+          <ul class="sightseens__list clear-list">
             <li class="sightseens__item checkbox-field">
               <input class="checkbox-field__input" type="checkbox" name="sightseens" id="sightseens"
                 value="bridge-of-fear" checked>
@@ -121,7 +122,8 @@
         <fieldset class="form-review__item emotions">
           <legend class="form-review__title">Опишите свои эмоции:</legend>
           <label class="emotions__label" for="emotions"></label>
-          <textarea class="emotions__text" name="emotions" id="emotions" cols="30" rows="10"></textarea>
+          <textarea class="emotions__text" name="emotions" id="emotions" cols="30" rows="10"
+            placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
 
         <button class="form-review__button button" type="submit">Отправить отзыв</button>
@@ -133,7 +135,7 @@
   <footer class="page-footer">
     <p class="page-footer__item">#visitsedona</p>
     <div class="page-footer__item social">
-      <ul class="social__list">
+      <ul class="social__list clear-list">
         <li class="social__item">
           <a class="social__link social__link--twitter" href="#">
             <span class="visually-hidden">Twitter</span>

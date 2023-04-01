@@ -6,6 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Sedona</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page-body">
@@ -15,18 +20,18 @@
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="main-nav__list">
+      <ul class="main-nav__list clear-list">
         <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--active">Главная</a>
+          <a class="main-nav__link main-nav__link--active link">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a href="gallery.html" class="main-nav__link">Фото и видео</a>
+          <a href="gallery.html" class="main-nav__link link">Фото и видео</a>
         </li>
         <li class="main-nav__item">
-          <a href="form.html" class="main-nav__link">Форма отзыва</a>
+          <a href="form.html" class="main-nav__link link">Форма отзыва</a>
         </li>
         <li class="main-nav__item">
-          <a href="https://htmlacademy.ru/" class="main-nav__link"> Html Academy</a>
+          <a href="https://htmlacademy.ru/" class="main-nav__link link"> Html Academy</a>
         </li>
       </ul>
     </nav>
@@ -38,14 +43,16 @@
       <h2 class="visually-hidden">Особенности</h2>
       <p class="features__slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
       <p class="features__subtitle">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
-      <ol class="features__list">
-        <li class="features__item">
-          <h3 class="features__title">Настоящий городок</h3>
-          <p class="features__number">&ndash; №1 &ndash;</p>
-          <p class="features__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+      <ol class="features__list clear-list">
+        <li class="features__item features__item--img">
+          <div class="features__wrapper features__wrapper--blue">
+            <h3 class="features__title">Настоящий городок</h3>
+            <p class="features__number">&ndash; №1 &ndash;</p>
+            <p class="features__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
           <div class="town-features">
             <h4 class="visually-hidden">Преимущества городка</h4>
-            <ul class="town-features__list">
+            <ul class="town-features__list clear-list">
               <li class="town-features__item">
                 <h5 class="town-features__title">Жилье</h5>
                 <p class="town-features__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -61,25 +68,33 @@
             </ul>
           </div>
         </li>
-        <li class="features__item">
-          <h3 class="features__title">Там есть мост опасности</h3>
-          <p class="features__number">&ndash; №2 &ndash;</p>
-          <p class="features__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        <li class="features__item features__item--img">
+          <div class="features__wrapper features__wrapper--blue">
+            <h3 class="features__title">Там есть мост опасности</h3>
+            <p class="features__number">&ndash; №2 &ndash;</p>
+            <p class="features__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </div>
         </li>
         <li class="features__item">
-          <h3 class="features__title">Небольшая площадь</h3>
-          <p class="features__number">&ndash; №3 &ndash;</p>
-          <p class="features__description">Все интересные места находятся очень близко</p>
+          <div class="features__wrapper">
+            <h3 class="features__title">Небольшая площадь</h3>
+            <p class="features__number">&ndash; №3 &ndash;</p>
+            <p class="features__description">Все интересные места находятся очень близко</p>
+          </div>
         </li>
         <li class="features__item">
-          <h3 class="features__title">Красивая дорога</h3>
-          <p class="features__number">&ndash; №4 &ndash;</p>
-          <p class="features__description">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+          <div class="features__wrapper">
+            <h3 class="features__title">Красивая дорога</h3>
+            <p class="features__number">&ndash; №4 &ndash;</p>
+            <p class="features__description">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+          </div>
         </li>
         <li class="features__item">
-          <h3 class="features__title">Мало туристов</h3>
-          <p class="features__number">&ndash; №5 &ndash;</p>
-          <p class="features__description">Большинство едет в Гранд каньон и толпится там</p>
+          <div class="features__wrapper">
+            <h3 class="features__title">Мало туристов</h3>
+            <p class="features__number">&ndash; №5 &ndash;</p>
+            <p class="features__description">Большинство едет в Гранд каньон и толпится там</p>
+          </div>
         </li>
       </ol>
     </section>
@@ -89,7 +104,7 @@
       <p class="search__title">Заинтересовались?</p>
       <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
         Cедоне</p>
-      <a href="#" class="search__link">Найти гостиницу</a>
+      <a href="#" class="search__link button">Найти гостиницу</a>
     </section>
 
     <section class="map">
@@ -99,19 +114,19 @@
   <footer class="page-footer">
     <p class="page-footer__item">#visitsedona</p>
     <div class="page-footer__item social">
-      <ul class="social__list">
+      <ul class="social__list clear-list">
         <li class="social__item">
-          <a class="social__link social__link--twitter" href="#">
+          <a class="social__link social__link--twitter button" href="#">
             <span class="visually-hidden">Twitter</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">
+          <a class="social__link social__link--facebook button" href="#">
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="#">
+          <a class="social__link social__link--youtube button" href="#">
             <span class="visually-hidden">Youtube</span>
           </a>
         </li>
@@ -119,7 +134,7 @@
     </div>
     <div class="page-footer__item copyright">
       <p class="copyright__prefix">Разработано</p>
-      <a href="https://htmlacademy.ru/" class="copyright__link">
+      <a href="#" class="copyright__link">
         <img class="copyright__img" src="img/htmlacademy.svg" alt="Логотип Html Academy" width="27" height="34">
       </a>
     </div>
