@@ -1,3 +1,8 @@
+.features {
+  outline: 2px solid rgba(10, 96, 226, 0.8);
+  outline-offset: -2px;
+}
+
 .features__wrapper {
   background-color: @bright-gray;
 }
@@ -6,8 +11,32 @@
   background-color: @dark-sky-blue;
 }
 
+.features__wrapper--blue::after {
+  content: "";
+  display: block;
+  width: 512px;
+  height: 256px;
+}
+
+.features__wrapper--blue:nth-child(1)::after {
+  background-image: url("../img/photo-city.png");
+}
+
+.features__wrapper--blue:nth-child(3)::after {
+  background-image: url("../img/photo-city.png");
+}
+
 .features__item--img {
   color: @white;
+}
+
+@media (min-width: @tablet-width) {
+  .features__item--img {
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    // grid-template-rows: 1fr 1fr;
+  }
 }
 
 .features__slogan {

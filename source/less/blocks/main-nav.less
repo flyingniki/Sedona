@@ -1,8 +1,33 @@
 .main-nav {
-  font-family: "PT Sans", sans-serif;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: bold;
   outline: 2px solid rgba(233, 7, 7, 0.8);
   outline-offset: -2px;
+}
+
+.main-nav__link {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: bold;
+  color: @white;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .main-nav__item {
+    width: 20%;
+  }
+
+  .main-nav__link {
+    color: @black;
+  }
 }
