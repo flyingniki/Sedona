@@ -9,33 +9,31 @@
 
 .features__wrapper--blue {
   background-color: @dark-sky-blue;
-}
-
-.features__wrapper--blue::after {
-  content: "";
-  display: block;
-  width: 512px;
-  height: 256px;
-}
-
-.features__wrapper--blue:nth-child(1)::after {
-  background-image: url("../img/photo-city.png");
-}
-
-.features__wrapper--blue:nth-child(3)::after {
-  background-image: url("../img/photo-city.png");
-}
-
-.features__item--img {
   color: @white;
 }
 
 @media (min-width: @tablet-width) {
   .features__item--img {
     display: grid;
-    column-gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
-    // grid-template-rows: 1fr 1fr;
+
+    &:nth-child(1) {
+      grid-template-areas: "wrapper picture picture" "town town town";
+    }
+
+    &:nth-child(2) {
+      grid-template-areas: "picture picture wrapper";
+    }
+  }
+
+  .features__picture {
+    &:nth-child(2) {
+      background-image: url("../img/photo-bridge.png");
+    }
+
+    &:nth-child(3) {
+      background-image: url("../img/photo-city.png");
+    }
+    grid-area: picture;
   }
 }
 
