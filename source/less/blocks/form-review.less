@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: start;
 
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -16,7 +16,7 @@
   width: 100%;
 }
 
-@media (min-width: @tablet-width) and (max-width: @desktop-width) {
+@media (min-width: @tablet-width) {
   .form-review__title {
     font-size: 21px;
     font-weight: bold;
@@ -48,6 +48,8 @@
   }
 
   .form-review__send {
+    display: flex;
+    justify-content: space-around;
     order: 6;
     grid-column: span 2;
   }
@@ -66,6 +68,7 @@
 
   .sightseens__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
   }
 }
