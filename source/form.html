@@ -47,26 +47,7 @@
       <section class="review-section">
         <h2 class="visually-hidden">Форма отзыва</h2>
         <form class="review-section__form form-review" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="form-review__item impression">
-            <legend class="form-review__title">Ваше общее впечатление:</legend>
-            <ul class="impression__list clear-list">
-              <li class="impression__item radio-field">
-                <input class="radio-field__input" type="radio" name="impression" id="impression" value="positive"
-                  checked>
-                <label class="radio-field__label" for="impression">Скорее положительное</label>
-              </li>
-              <li class="impression__item radio-field">
-                <input class="radio-field__input" type="radio" name="impression" id="impression" value="negative">
-                <label class="radio-field__label" for="impression">Скорее отрицательное</label>
-              </li>
-              <li class="impression__item radio-field">
-                <input class="radio-field__input" type="radio" name="impression" id="impression" value="indefinite">
-                <label class="radio-field__label" for="impression">Затрудняюсь ответить</label>
-              </li>
-            </ul>
-          </fieldset>
-
-          <fieldset class="form-review__item fullname">
+          <fieldset class="form-review__item fullname form-review__item--fullname">
             <legend class="form-review__title">Представьтесь:</legend>
             <ul class="fullname__list clear-list">
               <li class="fullname__item text-field">
@@ -85,7 +66,7 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form-review__item contacts">
+          <fieldset class="form-review__item contacts form-review__item--contacts">
             <legend class="form-review__title">Контактная информация:</legend>
             <ul class="contacts__list clear-list">
               <li class="contacts__item text-field">
@@ -99,7 +80,26 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form-review__item sightseens">
+          <fieldset class="form-review__item impression form-review__item--impression">
+            <legend class="form-review__title">Ваше общее впечатление:</legend>
+            <ul class="impression__list clear-list">
+              <li class="impression__item radio-field">
+                <input class="radio-field__input" type="radio" name="impression" id="impression" value="positive"
+                  checked>
+                <label class="radio-field__label" for="impression">Скорее положительное</label>
+              </li>
+              <li class="impression__item radio-field">
+                <input class="radio-field__input" type="radio" name="impression" id="impression" value="negative">
+                <label class="radio-field__label" for="impression">Скорее отрицательное</label>
+              </li>
+              <li class="impression__item radio-field">
+                <input class="radio-field__input" type="radio" name="impression" id="impression" value="indefinite">
+                <label class="radio-field__label" for="impression">Затрудняюсь ответить</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="form-review__item sightseens form-review__item--sightseens">
             <legend class="form-review__title">Посещенные достопримечательности:</legend>
             <ul class="sightseens__list clear-list">
               <li class="sightseens__item checkbox-field">
@@ -125,15 +125,17 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form-review__item emotions">
+          <fieldset class="form-review__item emotions form-review__item--emotions">
             <legend class="form-review__title">Опишите свои эмоции:</legend>
             <label class="emotions__label" for="emotions"></label>
             <textarea class="emotions__text" name="emotions" id="emotions" cols="30" rows="10"
               placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
 
-          <button class="form-review__button button" type="submit">Отправить отзыв</button>
-          <p class="form-review__footnote">* &ndash; обязательные поля</p>
+          <div class="form-review__send">
+            <button class="form-review__button button" type="submit">Отправить отзыв</button>
+            <p class="form-review__footnote">* &ndash; обязательные поля</p>
+          </div>
         </form>
       </section>
     </main>

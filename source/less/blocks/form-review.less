@@ -1,4 +1,71 @@
-.form-review__title {
-  font-size: 21px;
-  font-weight: bold;
+.form-review {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.form-review__item {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100%;
+}
+
+@media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  .form-review__title {
+    font-size: 21px;
+    font-weight: bold;
+  }
+
+  .form-review__item {
+    &--impression {
+      order: 1;
+    }
+
+    &--fullname {
+      order: 2;
+    }
+
+    &--contacts {
+      order: 3;
+      grid-column: span 2;
+    }
+
+    &--sightseens {
+      order: 4;
+      grid-column: span 2;
+    }
+
+    &--emotions {
+      order: 5;
+      grid-column: span 2;
+    }
+  }
+
+  .form-review__send {
+    order: 6;
+    grid-column: span 2;
+  }
+
+  .sightseens__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sightseens__list {
+    display: flex;
+    justify-content: space-around;
+  }
 }
