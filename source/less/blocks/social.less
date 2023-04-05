@@ -1,0 +1,36 @@
+.social__list {
+  display: flex;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 6px;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 48px;
+}
+
+.social__link::after {
+  display: block;
+  content: "";
+  width: 18px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social__link--twitter::after {
+  background-image: url("../img/icons/icon-twitter.svg");
+}
+
+.social__link--facebook::after {
+  background-image: url("../img/icons/icon-facebook.svg");
+}
+
+.social__link--youtube::after {
+  background-image: url("../img/icons/icon-youtube.svg");
+}
