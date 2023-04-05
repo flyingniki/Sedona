@@ -1,9 +1,23 @@
 .town-features {
+  background-color: @white;
+}
+
+.town-features__title {
+  font-size: 21px;
+  font-weight: bold;
+  color: @black;
+}
+
+.town-features__description {
+  color: @dark-charcoal;
+}
+
+.town-features--features {
   order: 2;
 }
 
 @media (min-width: @tablet-width) {
-  .town-features {
+  .town-features--features {
     grid-column: span 3;
   }
 
