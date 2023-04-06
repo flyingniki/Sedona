@@ -1,4 +1,26 @@
 .control-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.control-panel__range-field {
   background-color: @black;
   opacity: 0.6;
+}
+
+.control-panel__buttons-field {
+  display: flex;
+  justify-content: space-between;
+  background-color: @anti-flash-white;
+
+  @media (min-width: @tablet-width) {
+    background-color: @black;
+    opacity: 0.6;
+  }
+}
+
+.control-panel__path {
+  @media (max-width: @mobile-width-only) {
+    fill: @shuttle-gray;
+  }
 }
