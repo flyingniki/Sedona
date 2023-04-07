@@ -50,7 +50,7 @@
         <ul class="gallery__list clear-list">
           <li class="gallery__item picture-item picture-item--big">
             <a class="picture-item__link" href="#">
-              <img class="picture-item__img" src="img/photo-1.png" alt="Неродные просторы" width="1200" height="400">
+              <img class="picture-item__img" src="img/photo-1.png" alt="Неродные просторы">
             </a>
             <div class="picture-item__description">
               <p class="picture-item__title">Неродные просторы</p>
@@ -60,8 +60,7 @@
           </li>
           <li class="gallery__item picture-item">
             <a class="picture-item__link" href="#">
-              <img class="picture-item__img" src="img/photo-2.png" alt="Местная растительность" width="400"
-                height="267">
+              <img class="picture-item__img" src="img/photo-2.png" alt="Местная растительность">
             </a>
             <div class="picture-item__description">
               <p class="picture-item__title">Местная растительность</p>
@@ -71,7 +70,7 @@
           </li>
           <li class="gallery__item picture-item">
             <a class="picture-item__link" href="#">
-              <img class="picture-item__img" src="img/photo-3.png" alt="Дорога на север" width="400" height="267">
+              <img class="picture-item__img" src="img/photo-3.png" alt="Дорога на север">
             </a>
             <div class="picture-item__description">
               <p class="picture-item__title">Дорога на север</p>
@@ -81,7 +80,7 @@
           </li>
           <li class="gallery__item picture-item">
             <a class="picture-item__link" href="#">
-              <img class="picture-item__img" src="img/photo-4.png" alt="Мост страха" width="400" height="267">
+              <img class="picture-item__img" src="img/photo-4.png" alt="Мост страха">
             </a>
             <div class="picture-item__description">
               <p class="picture-item__title">Мост страха</p>
@@ -100,12 +99,14 @@
         </div>
         <div class="video-player">
           <a class="video-player__link" href="#">
-            <img class="video-player__img" src="img/video.png" alt="Видеопрезентация" width="800" height="500">
+            <img class="video-player__img" src="img/video.png" alt="Видеопрезентация">
           </a>
           <div class="video-player__panel control-panel">
             <div class="control-panel__range-field">
-              <label class="visually-hidden" for="range">Панель управления видеоплеера</label>
-              <input class="control-panel__range" type="range" name="range" id="range" value="">
+              <div class="control-panel__scale">
+                <div class="control-panel__bar"></div>
+              </div>
+              <div class="control-panel__toggle" tabindex="0"></div>
             </div>
             <div class="control-panel__buttons-field">
               <div class="control-panel__replay">
@@ -131,7 +132,6 @@
                 </svg>
               </div>
             </div>
-
           </div>
         </div>
       </section>
