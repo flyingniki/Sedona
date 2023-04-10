@@ -11,7 +11,24 @@
   }
 }
 
-// .page-header__logo {
-//   outline: 2px solid rgba(0, 255, 0, 0.8);
-//   outline-offset: -2px;
-// }
+.page-header__logo {
+  display: flex;
+  position: relative;
+  justify-content: center;
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: "";
+      background-image: url("../img/logo-vector.svg");
+      background-repeat: no-repeat;
+    }
+
+    width: 196px;
+    height: 96px;
+  }
+}
