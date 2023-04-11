@@ -23,22 +23,29 @@
   display: block;
   position: absolute;
   top: 0;
-  bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
   z-index: 1;
   text-align: center;
+  width: 102px;
+  height: 84px;
+
+  @media (min-width: @desktop-width) {
+    width: 186px;
+    height: 96px;
+  }
 }
 
 .page-header__logo-img {
+  width: 100%;
+  height: auto;
+
   @media (min-width: @tablet-width) {
     content: url("../img/logotype-tablet.svg");
   }
 
   @media (min-width: @desktop-width) {
     content: url("../img/logotype-desktop.svg");
-    width: 186px;
-    height: 96px;
   }
 }
