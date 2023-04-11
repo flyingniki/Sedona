@@ -1,34 +1,50 @@
-.page-header {
-  display: flex;
-  flex-direction: column;
-  background-image: url("../img/intro.png");
+.page-header__background {
+  background-image: url("../img/index/back-mobile.png");
   background-repeat: no-repeat;
   background-position: center;
   height: 389px;
 
   @media (min-width: @tablet-width) {
+    background-image: url("../img/index/intro.png");
     height: 518px;
   }
 }
 
+.page-header__background-img {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
 .page-header__logo {
-  display: flex;
-  position: relative;
-  justify-content: center;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+  text-align: center;
+}
 
-  @media (min-width: @desktop-width) {
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      content: "";
-      background-image: url("../img/logo-vector.svg");
-      background-repeat: no-repeat;
-    }
+@media (max-width: @mobile-width-only) {
+  .page-header__logo-img--tablet,
+  .page-header__logo-img--desktop {
+    display: none;
+  }
+}
 
-    width: 196px;
-    height: 96px;
+@media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
+  .page-header__logo-img--mobile,
+  .page-header__logo-img--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo-img--mobile,
+  .page-header__logo-img--tablet {
+    display: none;
   }
 }

@@ -2,12 +2,96 @@
   position: relative;
   background-color: @white;
   min-height: 56px;
-  // outline: 2px solid rgba(233, 7, 7, 0.8);
-  // outline-offset: -2px;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 23px;
+  height: 22px;
+  background-color: @white;
+  cursor: pointer;
+  border: none;
+
+  // &:hover,
+  // &:active {
+  //   background-color: #624530;
+  // }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 23px;
+  height: 2px;
+  background-color: @dark-sky-blue;
+  box-shadow: 0 8px 0 0 @dark-sky-blue, 0 16px 0 0 @dark-sky-blue;
+}
+
+// .main-nav--closed .main-nav__toggle:active::before {
+//   background-color: fade(#ffffff, 30%);
+//   box-shadow: 0 8px 0 0 fade(#ffffff, 30%), 0 16px 0 0 fade(#ffffff, 30%);
+// }
+
+.main-nav--closed .main-nav__list {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  background-color: @dark-sky-blue;
+  top: 0;
+  right: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 23px;
+    height: 2px;
+    background-color: @white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  // &:active::before,
+  // &:active::after {
+  //   background-color: fade(#ffffff, 30%);
+  // }
 }
 
 .main-nav__item {
   background-color: @dark-sky-blue;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav__item:not(:first-child) {
+    border-top: 1px solid @border-top;
+  }
+
+  .main-nav__item:not(:last-child) {
+    border-bottom: 1px solid @border-bottom;
+  }
+
+  .main-nav__item:last-child {
+    box-shadow: inset 0 -4px 5px rgba(@black, 0.2);
+  }
 }
 
 .main-nav__link {
@@ -27,12 +111,16 @@
   .main-nav__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .main-nav__item {
     background-color: @white;
     width: 20%;
+
+    &:nth-child(4n-2) {
+      margin-right: 20%;
+    }
   }
 
   .main-nav__link {
