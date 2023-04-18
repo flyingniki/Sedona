@@ -3,9 +3,13 @@
 }
 
 .town-features__title {
-  font-size: 21px;
+  font-size: 18px;
   font-weight: bold;
   color: @black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .town-features__description {
@@ -14,14 +18,13 @@
 
 .town-features--features {
   order: 2;
-}
-
-@media (min-width: @tablet-width) {
-  .town-features--features {
+  @media (min-width: @tablet-width) {
     grid-column: span 3;
   }
+}
 
-  .town-features__list {
+.town-features__list {
+  @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }

@@ -1,7 +1,8 @@
-// .features {
-//   outline: 2px solid rgba(10, 96, 226, 0.8);
-//   outline-offset: -2px;
-// }
+.features {
+  // outline: 2px solid rgba(10, 96, 226, 0.8);
+  // outline-offset: -2px;
+  text-align: center;
+}
 
 .features__wrapper {
   background-color: @bright-gray;
@@ -29,15 +30,8 @@
     background-image: url("../img/index/photo-bridge.png");
   }
   display: grid;
-}
 
-@media (min-width: @tablet-width) {
-  .features__list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .features__item--img {
+  @media (min-width: @tablet-width) {
     &:nth-child(1) {
       grid-column: span 3;
     }
@@ -67,18 +61,25 @@
   }
 }
 
-.features__slogan {
-  font-size: 21px;
+.features__list {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.features__slogan,
+.features__title {
+  font-size: 18px;
   font-weight: bold;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .features__subtitle {
   color: @dark-charcoal;
-}
-
-.features__title {
-  font-size: 21px;
-  font-weight: bold;
 }
 
 .features__number {
