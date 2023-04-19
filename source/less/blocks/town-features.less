@@ -3,6 +3,8 @@
 }
 
 .town-features__title {
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   font-weight: bold;
   color: @black;
@@ -20,14 +22,46 @@
 
 .town-features--features {
   order: 2;
+
   @media (min-width: @tablet-width) {
     grid-column: span 3;
   }
 }
 
 .town-features__list {
+  text-align: left;
+  margin: 35px 11px 35px 69px;
+
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+.town-features__item {
+  &::before {
+    position: absolute;
+    top: -9px;
+    left: -48px;
+    display: block;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 38px;
+  }
+
+  &--housing::before {
+    background-image: url("../img/icons/icon-house.svg");
+  }
+
+  &--burger::before {
+    background-image: url("../img/icons/icon-burger.svg");
+  }
+
+  &--gift::before {
+    background-image: url("../img/icons/icon-gift.svg");
+  }
+
+  position: relative;
 }
