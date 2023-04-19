@@ -133,11 +133,25 @@
 .features__number {
   margin: 0;
   padding: 0;
+  padding-bottom: 15px;
   line-height: 21px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 21px;
+  }
 }
 
 .features__description {
   margin: 0;
   padding: 0;
+  padding-bottom: 39px;
   line-height: 21px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 43px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 56px;
+  }
 }
