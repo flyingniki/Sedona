@@ -4,6 +4,7 @@
 
 .town-features__title {
   margin: 0;
+  margin-bottom: 15px;
   padding: 0;
   font-size: 18px;
   font-weight: bold;
@@ -35,6 +36,12 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    margin: 158px 35px 59px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 158px 58px 80px;
   }
 }
 
@@ -43,12 +50,19 @@
     position: absolute;
     top: -9px;
     left: -48px;
-    display: block;
     content: "";
     background-repeat: no-repeat;
     background-position: center;
     width: 40px;
     height: 38px;
+
+    @media (min-width: @tablet-width) {
+      width: 75px;
+      height: 72px;
+      background-size: 75px 72px;
+      top: -98px;
+      left: calc(50% - 38px);
+    }
   }
 
   &--housing::before {
@@ -64,4 +78,9 @@
   }
 
   position: relative;
+  margin-bottom: 26px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
