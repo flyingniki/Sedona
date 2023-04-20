@@ -2,11 +2,23 @@
   // outline: 2px solid rgba(10, 96, 226, 0.8);
   // outline-offset: -2px;
   text-align: center;
+  padding: 33px 20px 49px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 57px;
+    padding-bottom: 57px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 96px;
+    padding-bottom: 84px;
+  }
 }
 
 .search__title {
   margin: 0;
   padding: 0;
+  padding-bottom: 18px;
   font-size: 21px;
   font-weight: bold;
 
@@ -18,6 +30,16 @@
 .search__description {
   margin: 0;
   padding: 0;
+  padding-bottom: 27px;
   line-height: 24px;
   color: @dark-charcoal;
+}
+
+.search__link {
+  padding: 14px 32px 17px;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 458px;
+  }
 }
