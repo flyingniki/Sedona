@@ -22,13 +22,14 @@
   font-weight: bold;
   color: @white;
   background-color: @dark-sky-blue;
-  border: none;
-}
-
-.button,
-.link {
-  display: inline-block;
-  box-sizing: border-box;
-  text-transform: uppercase;
   text-decoration: none;
+
+  &:hover {
+    background-color: @cerulean-frost;
+  }
+
+  &:active {
+    background-color: @hippie-blue;
+    color: rgba(@white, 0.3);
+  }
 }
