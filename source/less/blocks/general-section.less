@@ -1,8 +1,22 @@
+.general-section {
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 14px;
+  outline: 2px solid rgba(10, 96, 226, 0.8);
+  outline-offset: -2px;
+}
+
 .general-section__title {
   margin: 0;
+  margin-bottom: 26px;
   padding: 0;
-  font-size: 30px;
+  font-size: 18px;
   font-weight: bold;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .general-section__subtitle {

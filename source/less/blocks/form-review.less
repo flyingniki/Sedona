@@ -14,15 +14,10 @@
   padding: 0;
   border: 0;
   width: 100%;
-}
+  outline: 2px solid rgba(35, 226, 10, 0.8);
+  outline-offset: -2px;
 
-@media (min-width: @tablet-width) {
-  .form-review__title {
-    font-size: 21px;
-    font-weight: bold;
-  }
-
-  .form-review__item {
+  @media (min-width: @tablet-width) {
     &--impression {
       order: 1;
     }
@@ -46,30 +41,41 @@
       grid-column: span 2;
     }
   }
+}
 
-  .form-review__send {
+.form-review__title {
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    font-weight: bold;
+  }
+}
+
+.form-review__send {
+  @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-around;
     order: 6;
     grid-column: span 2;
   }
-
-  .sightseens__list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
-@media (min-width: @desktop-width) {
-  .contacts__list {
+.sightseens__list {
+  @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .sightseens__list {
+  @media (min-width: @desktop-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+}
+
+.contacts__list {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
