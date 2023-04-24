@@ -10,3 +10,21 @@
   padding: 0;
   font-weight: normal;
 }
+
+.copyright__link {
+  & .copyright__svg-path {
+    fill: @black;
+  }
+
+  &:hover {
+    .copyright__svg-path {
+      fill: @dark-sky-blue;
+    }
+  }
+
+  &:active {
+    .copyright__svg-path {
+      fill: rgba(@black, 0.3);
+    }
+  }
+}
