@@ -1,0 +1,16 @@
+.contacts__list {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.contacts__item:not(:last-child) {
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 14px;
+  }
+
+  @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
+    margin-bottom: 25px;
+  }
+}

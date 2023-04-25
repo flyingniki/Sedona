@@ -1,0 +1,19 @@
+.sightseens__list {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 42px 44px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.sightseens__item:not(:last-child) {
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 34px;
+  }
+}
