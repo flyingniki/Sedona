@@ -41,7 +41,7 @@
       </div>
     </header>
     <main class="page-main">
-      <section class="general-section">
+      <section class="general-section general-section--form">
         <h1 class="general-section__title">Оставьте свой отзыв</h1>
         <p class="general-section__subtitle">Помогите нашим отелям стать лучше! оставьте отзыв о них,
           а также о посещенных вами достопримечательностях</p>
@@ -50,18 +50,18 @@
       <section class="review-section">
         <h2 class="visually-hidden">Форма отзыва</h2>
         <form class="review-section__form form-review" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="form-review__item fullname form-review__item--fullname">
+          <fieldset class="fullname form-review__item form-review__item--fullname">
             <legend class="form-review__title">Представьтесь:</legend>
             <ul class="fullname__list clear-list">
-              <li class="fullname__item text-field">
+              <li class="text-field fullname__item">
                 <label class="text-field__label" for="firstname">Имя*</label>
                 <input class="text-field__input" type="text" name="firstname" id="firstname" placeholder="Петр">
               </li>
-              <li class="fullname__item text-field">
+              <li class="text-field fullname__item">
                 <label class="text-field__label" for="lastname">Фамилия*</label>
                 <input class="text-field__input" type="text" name="lastname" id="lastname" placeholder="Иванов">
               </li>
-              <li class="fullname__item text-field">
+              <li class="text-field fullname__item">
                 <label class="text-field__label" for="secondname">Отчество</label>
                 <input class="text-field__input" type="text" name="secondname" id="secondname"
                   placeholder="Александрович">
@@ -69,59 +69,59 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form-review__item contacts form-review__item--contacts">
+          <fieldset class="contacts form-review__item form-review__item--contacts">
             <legend class="form-review__title">Контактная информация:</legend>
             <ul class="contacts__list clear-list">
-              <li class="contacts__item text-field">
+              <li class="text-field contacts__item">
                 <label class="text-field__label" for="phone"><span class="text-field__span">Контактный</span>
                   телефон*</label>
                 <input class="text-field__input" type="tel" name="phone" id="phone" placeholder="Введите телефон">
               </li>
-              <li class="contacts__item text-field">
+              <li class="text-field contacts__item">
                 <label class="text-field__label" for="email">Электронная почта*</label>
                 <input class="text-field__input" type="email" name="email" id="email" placeholder="Введите e-mail">
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="form-review__item impression form-review__item--impression">
+          <fieldset class="impression form-review__item form-review__item--impression">
             <legend class="form-review__title">Ваше общее впечатление:</legend>
             <ul class="impression__list clear-list">
-              <li class="impression__item radio-field">
+              <li class="radio-field impression__item">
                 <input class="radio-field__input" type="radio" name="impression" id="impression" value="positive"
                   checked>
                 <label class="radio-field__label" for="impression">Скорее положительное</label>
               </li>
-              <li class="impression__item radio-field">
+              <li class="radio-field impression__item">
                 <input class="radio-field__input" type="radio" name="impression" id="impression" value="negative">
                 <label class="radio-field__label" for="impression">Скорее отрицательное</label>
               </li>
-              <li class="impression__item radio-field">
+              <li class="radio-field impression__item">
                 <input class="radio-field__input" type="radio" name="impression" id="impression" value="indefinite">
                 <label class="radio-field__label" for="impression">Затрудняюсь ответить</label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="form-review__item sightseens form-review__item--sightseens">
+          <fieldset class="sightseens form-review__item form-review__item--sightseens">
             <legend class="form-review__title">Посещенные достопримечательности:</legend>
             <ul class="sightseens__list clear-list">
-              <li class="sightseens__item checkbox-field">
+              <li class="checkbox-field sightseens__item">
                 <input class="checkbox-field__input" type="checkbox" name="sightseens" id="sightseens"
                   value="bridge-of-fear" checked>
                 <label class="checkbox-field__label" for="sightseens">Мост страха</label>
               </li>
-              <li class="sightseens__item checkbox-field">
+              <li class="checkbox-field sightseens__item">
                 <input class="checkbox-field__input" type="checkbox" name="sightseens" id="sightseens"
                   value="mount-bell" checked>
                 <label class="checkbox-field__label" for="sightseens">Гора-Колокол</label>
               </li>
-              <li class="sightseens__item checkbox-field">
+              <li class="checkbox-field sightseens__item">
                 <input class="checkbox-field__input" type="checkbox" name="sightseens" id="sightseens"
                   value="slide-park" checked>
                 <label class="checkbox-field__label" for="sightseens">Слайд-парк</label>
               </li>
-              <li class="sightseens__item checkbox-field">
+              <li class="checkbox-field sightseens__item">
                 <input class="checkbox-field__input" type="checkbox" name="sightseens" id="sightseens"
                   value="red-rocks">
                 <label class="checkbox-field__label" for="sightseens">Красные скалы</label>
@@ -129,7 +129,7 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form-review__item emotions form-review__item--emotions">
+          <fieldset class="emotions form-review__item form-review__item--emotions">
             <legend class="form-review__title">Опишите свои эмоции:</legend>
             <label class="emotions__label" for="emotions"></label>
             <textarea class="emotions__text" name="emotions" id="emotions" cols="30" rows="10"
@@ -145,7 +145,7 @@
     </main>
     <footer class="page-footer">
       <p class="page-footer__item">#visitsedona</p>
-      <div class="page-footer__item social">
+      <div class="social page-footer__item">
         <ul class="social__list clear-list">
           <li class="social__item">
             <a class="social__link social__link--twitter button" href="#">
@@ -164,11 +164,12 @@
           </li>
         </ul>
       </div>
-      <div class="page-footer__item copyright">
+      <div class="copyright page-footer__item">
         <p class="copyright__prefix">Разработано</p>
         <a href="#" class="copyright__link">
-          <svg class="copyright__svg" xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 60 60">
-            <path class="copyright__svg-path" fill="#2E368F"
+          <svg class="copyright__svg" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="27" height="34"
+            viewBox="0 0 60 60">
+            <path
               d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
           </svg>
         </a>
