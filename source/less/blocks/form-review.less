@@ -44,6 +44,16 @@
     }
 
     @media (min-width: @tablet-width) {
+      &::before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 1px;
+        height: 292px;
+        background: @mercury;
+        top: -81px;
+        left: -45px;
+      }
       order: 2;
     }
   }
