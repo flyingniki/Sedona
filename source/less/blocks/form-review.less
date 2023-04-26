@@ -1,15 +1,20 @@
 .form-review {
   display: flex;
   flex-direction: column;
-  align-items: start;
 
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 90px;
+  }
+
+  @media (min-width: @desktop-width) {
+    column-gap: 208px;
   }
 }
 
 .form-review__item {
+  position: relative;
   margin: 0;
   padding: 0;
   border: 0;
@@ -17,8 +22,23 @@
   outline: 2px solid rgba(35, 226, 10, 0.8);
   outline-offset: -2px;
 
+  &::before {
+    @media (max-width: @mobile-width-only) {
+      position: absolute;
+      content: "";
+      display: block;
+      width: calc(100% + 40px);
+      height: 1px;
+      background: @mercury;
+      left: -20px;
+    }
+  }
+
   &--fullname {
     @media (max-width: @mobile-width-only) {
+      &::before {
+        top: -65px;
+      }
       margin-top: 20px;
       margin-bottom: 25px;
     }
@@ -30,6 +50,9 @@
 
   &--contacts {
     @media (max-width: @mobile-width-only) {
+      &::before {
+        top: -63px;
+      }
       margin-top: 20px;
       margin-bottom: 25px;
     }
@@ -37,11 +60,15 @@
     @media (min-width: @tablet-width) {
       order: 3;
       grid-column: span 2;
+      margin-top: 73px;
     }
   }
 
   &--impression {
     @media (max-width: @mobile-width-only) {
+      &::before {
+        top: -71px;
+      }
       margin-top: 20px;
       margin-bottom: 31px;
     }
@@ -53,6 +80,9 @@
 
   &--sightseens {
     @media (max-width: @mobile-width-only) {
+      &::before {
+        top: -102px;
+      }
       margin-top: 15px;
       margin-bottom: 30px;
     }
@@ -60,17 +90,22 @@
     @media (min-width: @tablet-width) {
       order: 4;
       grid-column: span 2;
+      margin-top: 52px;
     }
   }
 
   &--emotions {
     @media (max-width: @mobile-width-only) {
+      &::before {
+        top: -66px;
+      }
       margin-top: 20px;
     }
 
     @media (min-width: @tablet-width) {
       order: 5;
       grid-column: span 2;
+      margin-top: 76px;
     }
   }
 }
@@ -90,6 +125,7 @@
 
     @media (min-width: @tablet-width) {
       margin-bottom: 55px;
+      text-align: left;
     }
   }
 
@@ -110,6 +146,7 @@
 
     @media (min-width: @tablet-width) {
       margin-bottom: 55px;
+      text-align: left;
     }
   }
 
@@ -122,7 +159,7 @@
   }
 
   &--emotions {
-    margin-bottom: 28px;
+    margin-bottom: 15px;
 
     @media (min-width: @tablet-width) {
       margin-bottom: 55px;
@@ -135,7 +172,7 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     order: 6;
     grid-column: span 2;
     margin-top: 77px;
@@ -143,6 +180,19 @@
 
   @media (min-width: @desktop-width) {
     margin-top: 58px;
+  }
+}
+
+.form-review__button {
+  width: 100%;
+  height: 58px;
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 480px;
   }
 }
 
