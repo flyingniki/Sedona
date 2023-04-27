@@ -23,32 +23,6 @@
 }
 
 .contacts__item {
-  position: relative;
-
-  &::after {
-    position: absolute;
-    display: block;
-    content: "";
-    width: 18px;
-    height: 18px;
-    background-repeat: no-repeat;
-    background-position: center;
-    top: 46px;
-    right: 18px;
-  }
-
-  &--phone {
-    &::after {
-      background-image: url("../img/form/phone.svg");
-    }
-  }
-
-  &--email {
-    &::after {
-      background-image: url("../img/form/mail.svg");
-    }
-  }
-
   &:not(:last-child) {
     @media (max-width: @mobile-width-only) {
       margin-bottom: 14px;

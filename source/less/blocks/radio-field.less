@@ -1,5 +1,29 @@
 .radio-field__label {
+  display: block;
+  position: relative;
   font-size: 18px;
   font-weight: bold;
   text-transform: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.radio-field__input {
+  & + .radio-field__label::before {
+    position: absolute;
+    content: "";
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: @anti-flash-white;
+  }
+
+  &:checked + .radio-field__label::after {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: @dark-charcoal;
+  }
 }
