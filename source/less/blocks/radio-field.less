@@ -1,3 +1,9 @@
+.radio-field {
+  &:last-child .radio-field__label {
+    margin-bottom: 0;
+  }
+}
+
 .radio-field__label {
   display: block;
   position: relative;
@@ -7,6 +13,11 @@
   cursor: pointer;
   user-select: none;
   margin-left: 71px;
+  margin-bottom: 43px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 52px;
+  }
 }
 
 .radio-field__input {
@@ -21,6 +32,14 @@
     background-color: @anti-flash-white;
   }
 
+  &:hover + .radio-field__label::before {
+    background-color: @mercury;
+  }
+
+  &:checked + .radio-field__label::before {
+    background-color: @light-gray;
+  }
+
   &:checked + .radio-field__label::after {
     position: absolute;
     content: "";
@@ -30,5 +49,9 @@
     left: -56px;
     border-radius: 50%;
     background-color: @dark-charcoal;
+  }
+
+  &:checked:hover + .radio-field__label::after {
+    opacity: 0.3;
   }
 }
