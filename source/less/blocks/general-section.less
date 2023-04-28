@@ -1,6 +1,6 @@
 .general-section {
-  // outline: 2px solid rgba(10, 96, 226, 0.8);
-  // outline-offset: -2px;
+  outline: 2px solid rgba(10, 96, 226, 0.8);
+  outline-offset: -2px;
   text-align: center;
 
   &--form {
@@ -14,6 +14,20 @@
 
     @media (min-width: @desktop-width) {
       margin: 113px auto 57px;
+    }
+  }
+
+  &--gallery {
+    margin: 24px auto 12px;
+    max-width: 299px;
+
+    @media (min-width: @tablet-width) {
+      margin: 59px auto;
+      max-width: 458px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin: 101px auto 66px;
     }
   }
 }
