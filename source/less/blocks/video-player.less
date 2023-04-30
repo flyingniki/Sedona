@@ -1,9 +1,15 @@
 .video-player {
   position: relative;
   max-width: 800px;
+  margin: auto;
 }
 
 .video-player__video {
   display: block;
   width: 100%;
+
+  @media (max-width: @mobile-width-only) {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+  }
 }
