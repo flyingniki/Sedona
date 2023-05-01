@@ -4,22 +4,25 @@
   &__triangle {
     position: absolute;
     bottom: 0;
+    width: 100%;
     height: 57px;
 
     &-svg {
-      @media (min-width: @tablet-width) {
-        width: @tablet-width;
-      }
+      width: inherit;
+      // @media (min-width: @tablet-width) {
+      //   width: @tablet-width;
+      // }
 
-      @media (min-width: @desktop-width) {
-        width: @desktop-width;
-      }
+      // @media (min-width: @desktop-width) {
+      //   width: @desktop-width;
+      // }
     }
   }
 }
 
 .page-header__background {
-  background-image: url("../img/index/back-mobile.png");
+  // background-image: url("../img/index/back-mobile.png");
+  background-image: url("../img/index/intro.png");
   background-repeat: no-repeat;
   background-position: center;
   height: 389px;
