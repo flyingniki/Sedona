@@ -19,7 +19,7 @@
     grid-column: span 2;
 
     & .gallery__img {
-      @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
+      @media (min-width: @tablet-width) {
         height: 400px;
       }
     }
@@ -70,6 +70,10 @@
   display: block;
   object-fit: cover;
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    height: 267px;
+  }
 }
 
 .gallery__info {
