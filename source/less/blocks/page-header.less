@@ -14,11 +14,15 @@
 }
 
 .page-header__background {
-  background-image: url("../img/index/intro.jpg");
+  background-image: url("../img/index/intro.png");
   background-repeat: no-repeat;
   background-position: center;
   height: 389px;
   text-align: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index/intro@2x.png");
+  }
 
   @media (min-width: @tablet-width) {
     height: 518px;
