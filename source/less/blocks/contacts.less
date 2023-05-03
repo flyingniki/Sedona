@@ -5,6 +5,39 @@
   font-weight: bold;
   text-align: center;
 
+  &--accented {
+    @media (min-width: @tablet-width) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      &::before {
+        content: "";
+        width: 123px;
+        height: 1px;
+        background-color: @legend-line;
+      }
+
+      &::after {
+        content: "";
+        width: 123px;
+        height: 1px;
+        background-color: @legend-line;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      &::before {
+        width: 280px;
+      }
+
+      &::after {
+        width: 280px;
+      }
+    }
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 21px;
     margin-bottom: 21px;

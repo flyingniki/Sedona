@@ -17,7 +17,11 @@
   <div class="page__container">
     <header class="page-header">
       <a href="index.html" class="page-header__logo">
-        <img class="page-header__logo-img" src="img/logotype-mobile.svg" alt="Логотип" width="102" height="84">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+          <img class="page-header__logo-img" src="img/logotype-mobile.svg" alt="Логотип" width="102" height="84">
+        </picture>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
@@ -78,7 +82,7 @@
           </fieldset>
 
           <fieldset class="contacts form-review__item form-review__item--contacts">
-            <legend class="contacts__legend">Контактная информация:</legend>
+            <legend class="contacts__legend contacts__legend--accented">Контактная информация:</legend>
             <ul class="contacts__list clear-list">
               <li class="text-field contacts__item">
                 <label class="text-field__label" for="phone"><span class="text-field__span">Контактный</span>
@@ -112,7 +116,7 @@
           </fieldset>
 
           <fieldset class="sightseens form-review__item form-review__item--sightseens">
-            <legend class="sightseens__legend">Посещенные достопримечательности:</legend>
+            <legend class="sightseens__legend sightseens__legend--accented">Посещенные достопримечательности:</legend>
             <ul class="sightseens__list clear-list">
               <li class="checkbox-field sightseens__item">
                 <input class="checkbox-field__input visually-hidden" type="checkbox" name="bridge" id="bridge"
@@ -138,7 +142,7 @@
           </fieldset>
 
           <fieldset class="emotions form-review__item form-review__item--emotions">
-            <legend class="emotions__legend">Опишите свои эмоции:</legend>
+            <legend class="emotions__legend emotions__legend--accented">Опишите свои эмоции:</legend>
             <label class="emotions__label" for="emotions"></label>
             <textarea class="emotions__text" name="emotions" id="emotions" cols="30" rows="10"
               placeholder="Опишите подробно все свои восторги"></textarea>
