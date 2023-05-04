@@ -16,14 +16,6 @@
 
 .page__container {
   margin: auto;
-  width: @mobile-width;
-
-  @media (min-width: @tablet-width) {
-    width: @tablet-width;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: @desktop-width;
-    box-shadow: 0 5px 15px 0 rgba(@black, 0.2);
-  }
+  max-width: @desktop-width;
+  box-shadow: 0 5px 15px 0 rgba(@black, 0.2);
 }
