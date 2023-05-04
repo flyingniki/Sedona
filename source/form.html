@@ -20,7 +20,8 @@
         <picture>
           <source media="(min-width: 1200px)" srcset="img/template/logotype-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/template/logotype-tablet.svg">
-          <img class="page-header__logo-img" src="img/template/logotype-mobile.svg" alt="Логотип" width="102" height="84">
+          <img class="page-header__logo-img" src="img/template/logotype-mobile.svg" alt="Логотип" width="102"
+            height="84">
         </picture>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -87,11 +88,13 @@
               <li class="text-field contacts__item">
                 <label class="text-field__label" for="phone"><span class="text-field__span">Контактный</span>
                   телефон*</label>
-                <input class="text-field__input text-field__input--phone" type="tel" name="phone" id="phone" placeholder="Введите телефон">
+                <input class="text-field__input text-field__input--phone" type="tel" name="phone" id="phone"
+                  placeholder="Введите телефон">
               </li>
               <li class="text-field contacts__item">
                 <label class="text-field__label" for="email">Электронная почта*</label>
-                <input class="text-field__input text-field__input--email" type="email" name="email" id="email" placeholder="Введите e-mail">
+                <input class="text-field__input text-field__input--email" type="email" name="email" id="email"
+                  placeholder="Введите e-mail">
               </li>
             </ul>
           </fieldset>
@@ -100,16 +103,18 @@
             <legend class="impression__legend">Ваше общее впечатление:</legend>
             <ul class="impression__list clear-list">
               <li class="radio-field impression__item">
-                <input class="radio-field__input visually-hidden" type="radio" name="impression" id="positive" value="positive"
-                  checked>
+                <input class="radio-field__input visually-hidden" type="radio" name="impression" id="positive"
+                  value="positive" checked>
                 <label class="radio-field__label" for="positive">Скорее положительное</label>
               </li>
               <li class="radio-field impression__item">
-                <input class="radio-field__input visually-hidden" type="radio" name="impression" id="negative" value="negative">
+                <input class="radio-field__input visually-hidden" type="radio" name="impression" id="negative"
+                  value="negative">
                 <label class="radio-field__label" for="negative">Скорее отрицательное</label>
               </li>
               <li class="radio-field impression__item">
-                <input class="radio-field__input visually-hidden" type="radio" name="impression" id="indefinite" value="indefinite">
+                <input class="radio-field__input visually-hidden" type="radio" name="impression" id="indefinite"
+                  value="indefinite">
                 <label class="radio-field__label" for="indefinite">Затрудняюсь ответить</label>
               </li>
             </ul>
@@ -187,6 +192,28 @@
         </a>
       </div>
     </footer>
+
+    <section class="modal modal--success">
+      <div class="modal__info">
+        <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+        <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
+          опубликуем его на сайте.</p>
+      </div>
+      <div class="modal__close modal__close--success">
+        <button class="modal__button button">Закрыть окно</button>
+      </div>
+    </section>
+
+    <section class="modal modal--failure">
+      <div class="modal__info">
+        <h2 class="modal__title modal__title--failure">Что-то пошло не так!</h2>
+        <p class="modal__description">Проверьте поля,
+          выделенные красным, скорее всего вы забыли их заполнить</p>
+      </div>
+      <div class="modal__close">
+        <button class="modal__button button">Ок</button>
+      </div>
+    </section>
   </div>
 
 </body>
