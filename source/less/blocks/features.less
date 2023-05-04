@@ -52,10 +52,26 @@
 
   &:nth-child(1) {
     &::after {
-      background-image: url("../img/index/photo-city-desktop.jpg");
+      background-image: url("../img/index/photo-city-mobile.jpg");
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/index/photo-city-desktop@2x.jpg");
+        background-image: url("../img/index/photo-city-mobile@2x.jpg");
+      }
+
+      @media (min-width: @tablet-width) {
+        background-image: url("../img/index/photo-city-tablet.jpg");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/index/photo-city-tablet@2x.jpg");
+        }
+      }
+
+      @media (min-width: @desktop-width) {
+        background-image: url("../img/index/photo-city-desktop.jpg");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/index/photo-city-desktop@2x.jpg");
+        }
       }
     }
 
@@ -78,14 +94,27 @@
 
   &:nth-child(2) {
     &::after {
-      background-image: url("../img/index/photo-bridge-desktop.jpg");
+      background-image: url("../img/index/photo-bridge-mobile.jpg");
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/index/photo-bridge-desktop@2x.jpg");
+        background-image: url("../img/index/photo-bridge-mobile@2x.jpg");
       }
 
       @media (min-width: @tablet-width) {
         order: -1;
+        background-image: url("../img/index/photo-bridge-tablet.jpg");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/index/photo-bridge-tablet@2x.jpg");
+        }
+      }
+
+      @media (min-width: @desktop-width) {
+        background-image: url("../img/index/photo-bridge-desktop.jpg");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/index/photo-bridge-desktop@2x.jpg");
+        }
       }
     }
 

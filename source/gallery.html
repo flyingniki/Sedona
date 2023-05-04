@@ -20,7 +20,8 @@
         <picture>
           <source media="(min-width: 1200px)" srcset="img/template/logotype-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/template/logotype-tablet.svg">
-          <img class="page-header__logo-img" src="img/template/logotype-mobile.svg" alt="Логотип" width="102" height="84">
+          <img class="page-header__logo-img" src="img/template/logotype-mobile.svg" alt="Логотип" width="102"
+            height="84">
         </picture>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -65,8 +66,14 @@
         <ul class="gallery__list clear-list">
           <li class="gallery__item gallery__item--big">
             <a class="gallery__link" href="#">
-              <img class="gallery__img" src="img/gallery/photo-1-desktop.jpg" srcset="img/gallery/photo-1-desktop@2x.jpg 2x"
-                alt="Неродные просторы" width="280" height="280">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/gallery/photo-1-desktop.jpg, img/gallery/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/gallery/photo-1-tablet.jpg, img/gallery/photo-1-tablet@2x.jpg 2x">
+                <img class="gallery__img" src="img/gallery/photo-1-mobile.jpg"
+                  srcset="img/gallery/photo-1-mobile@2x.jpg 2x" alt="Неродные просторы" width="280" height="280">
+              </picture>
             </a>
             <div class="gallery__info">
               <div class="gallery__description">
@@ -78,8 +85,14 @@
           </li>
           <li class="gallery__item">
             <a class="gallery__link" href="#">
-              <img class="gallery__img" src="img/gallery/photo-2-desktop.jpg" srcset="img/gallery/photo-2-desktop@2x.jpg 2x"
-                alt="Местная растительность" width="280" height="280">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/gallery/photo-2-desktop.jpg, img/gallery/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/gallery/photo-2-tablet.jpg, img/gallery/photo-2-tablet@2x.jpg 2x">
+                <img class="gallery__img" src="img/gallery/photo-2-mobile.jpg"
+                  srcset="img/gallery/photo-2-mobile@2x.jpg 2x" alt="Местная растительность" width="280" height="280">
+              </picture>
             </a>
             <div class="gallery__info">
               <div class="gallery__description">
@@ -91,8 +104,14 @@
           </li>
           <li class="gallery__item">
             <a class="gallery__link" href="#">
-              <img class="gallery__img" src="img/gallery/photo-3-desktop.jpg" srcset="img/gallery/photo-3-desktop@2x.jpg 2x"
-                alt="Дорога на север" width="280" height="280">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/gallery/photo-3-desktop.jpg, img/gallery/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/gallery/photo-3-tablet.jpg, img/gallery/photo-3-tablet@2x.jpg 2x">
+                <img class="gallery__img" src="img/gallery/photo-3-mobile.jpg"
+                  srcset="img/gallery/photo-3-mobile@2x.jpg 2x" alt="Дорога на север" width="280" height="280">
+              </picture>
             </a>
             <div class="gallery__info">
               <div class="gallery__description">
@@ -104,8 +123,14 @@
           </li>
           <li class="gallery__item">
             <a class="gallery__link" href="#">
-              <img class="gallery__img" src="img/gallery/photo-4-desktop.jpg" srcset="img/gallery/photo-4-desktop@2x.jpg 2x"
-                alt="Мост страха" width="280" height="280">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/gallery/photo-4-desktop.jpg, img/gallery/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/gallery/photo-4-tablet.jpg, img/gallery/photo-4-tablet@2x.jpg 2x">
+                <img class="gallery__img" src="img/gallery/photo-4-mobile.jpg"
+                  srcset="img/gallery/photo-4-mobile@2x.jpg 2x" alt="Мост страха" width="280" height="280">
+              </picture>
             </a>
             <div class="gallery__info">
               <div class="gallery__description">
@@ -125,7 +150,15 @@
             очередной раз!</p>
         </div>
         <div class="video-player">
-          <img class="video-player__video" src="img/gallery/video-desktop.jpg" srcset="img/gallery/video@2x.jpg 2x" alt="Видеоплеер" width="320" height="201">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/gallery/video-desktop.jpg, img/gallery/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/gallery/video-tablet.jpg, img/gallery/video-tablet@2x.jpg 2x">
+            <img class="video-player__video" src="img/gallery/video-mobile.jpg"
+              srcset="img/gallery/video-mobile@2x.jpg 2x" alt="Видеоплеер" width="320" height="201">
+          </picture>
+
           <div class="control-panel video-player__panel">
             <div class="control-panel__range-field">
               <div class="control-panel__scale">
