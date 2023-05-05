@@ -1,22 +1,25 @@
 .modal {
   position: absolute;
-  // outline: 2px solid rgba(10, 96, 226, 0.8);
-  // outline-offset: -2px;
   text-align: center;
   width: @mobile-width;
   left: calc(50% - @mobile-width / 2);
   right: 0;
   bottom: 349px;
+  background-color: @white;
+  box-shadow: 0 5px 15px 0 rgba(@black, 0.2);
+
+  @media (min-width: @tablet-width) {
+    bottom: 343px;
+  }
+
+  @media (min-width: @desktop-width) {
+    bottom: 502px;
+  }
 
   &--failure {
     @media (min-width: @tablet-width) {
       width: 400px;
       left: calc(50% - 200px);
-      bottom: 343px;
-    }
-
-    @media (min-width: @desktop-width) {
-      bottom: 231px;
     }
   }
 
@@ -24,19 +27,11 @@
     @media (min-width: @tablet-width) {
       width: 640px;
       left: calc(50% - 320px);
-      bottom: 343px;
-    }
-
-    @media (min-width: @desktop-width) {
-      bottom: 231px;
     }
   }
 }
 
 .modal__info {
-  // outline: 2px solid rgba(226, 10, 172, 0.8);
-  // outline-offset: -2px;
-
   &--failure {
     & .modal__title {
       @media (min-width: @tablet-width) {
@@ -76,9 +71,6 @@
 }
 
 .modal__close {
-  // outline: 2px solid rgba(10, 226, 28, 0.8);
-  // outline-offset: -2px;
-
   &--failure {
     padding: 22px 70px 35px;
 
