@@ -1,12 +1,41 @@
 .modal {
-  outline: 2px solid rgba(10, 96, 226, 0.8);
-  outline-offset: -2px;
+  position: absolute;
+  // outline: 2px solid rgba(10, 96, 226, 0.8);
+  // outline-offset: -2px;
   text-align: center;
+  width: @mobile-width;
+  left: calc(50% - @mobile-width / 2);
+  right: 0;
+  bottom: 349px;
+
+  &--failure {
+    @media (min-width: @tablet-width) {
+      width: 400px;
+      left: calc(50% - 200px);
+      bottom: 343px;
+    }
+
+    @media (min-width: @desktop-width) {
+      bottom: 231px;
+    }
+  }
+
+  &--success {
+    @media (min-width: @tablet-width) {
+      width: 640px;
+      left: calc(50% - 320px);
+      bottom: 343px;
+    }
+
+    @media (min-width: @desktop-width) {
+      bottom: 231px;
+    }
+  }
 }
 
 .modal__info {
-  outline: 2px solid rgba(226, 10, 172, 0.8);
-  outline-offset: -2px;
+  // outline: 2px solid rgba(226, 10, 172, 0.8);
+  // outline-offset: -2px;
 
   &--failure {
     & .modal__title {
@@ -17,15 +46,15 @@
     padding: 40px 42px 0;
 
     @media (min-width: @tablet-width) {
-      padding: 52px 46px 0;
+      padding: 44px 46px 14px;
     }
   }
 
   &--success {
-    padding: 38px 38px 28px;
+    padding: 30px 38px 14px;
 
     @media (min-width: @tablet-width) {
-      padding: 54px 98px 30px;
+      padding: 44px 46px 14px;
     }
   }
 }
@@ -34,6 +63,7 @@
   margin: 0;
   font-size: 18px;
   font-weight: bold;
+  margin-bottom: 21px;
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
@@ -46,8 +76,8 @@
 }
 
 .modal__close {
-  outline: 2px solid rgba(10, 226, 28, 0.8);
-  outline-offset: -2px;
+  // outline: 2px solid rgba(10, 226, 28, 0.8);
+  // outline-offset: -2px;
 
   &--failure {
     padding: 22px 70px 35px;
@@ -67,6 +97,7 @@
 
   &--success {
     padding: 20px;
+    background-color: @anti-flash-white;
 
     & .modal__button {
       width: 280px;
@@ -86,7 +117,7 @@
   font-size: 18px;
   height: 58px;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     font-size: 21px;
   }
 }
