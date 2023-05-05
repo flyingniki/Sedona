@@ -1,6 +1,32 @@
 .modal {
-  @media (min-width: @tablet-width) {
-    padding: 0 60px;
+  outline: 2px solid rgba(10, 96, 226, 0.8);
+  outline-offset: -2px;
+  text-align: center;
+}
+
+.modal__info {
+  outline: 2px solid rgba(226, 10, 172, 0.8);
+  outline-offset: -2px;
+
+  &--failure {
+    & .modal__title {
+      @media (min-width: @tablet-width) {
+        line-height: 40px;
+      }
+    }
+    padding: 40px 42px 0;
+
+    @media (min-width: @tablet-width) {
+      padding: 52px 46px 0;
+    }
+  }
+
+  &--success {
+    padding: 38px 38px 28px;
+
+    @media (min-width: @tablet-width) {
+      padding: 54px 98px 30px;
+    }
   }
 }
 
@@ -12,12 +38,6 @@
   @media (min-width: @tablet-width) {
     font-size: 30px;
   }
-
-  &--failure {
-    @media (min-width: @tablet-width) {
-      line-height: 40px;
-    }
-  }
 }
 
 .modal__description {
@@ -25,8 +45,46 @@
   line-height: 24px;
 }
 
+.modal__close {
+  outline: 2px solid rgba(10, 226, 28, 0.8);
+  outline-offset: -2px;
+
+  &--failure {
+    padding: 22px 70px 35px;
+
+    & .modal__button {
+      width: 180px;
+
+      @media (min-width: @tablet-width) {
+        width: 272px;
+      }
+    }
+
+    @media (min-width: @tablet-width) {
+      padding: 27px 64px 50px;
+    }
+  }
+
+  &--success {
+    padding: 20px;
+
+    & .modal__button {
+      width: 280px;
+
+      @media (min-width: @tablet-width) {
+        width: 458px;
+      }
+    }
+
+    @media (min-width: @tablet-width) {
+      padding: 44px 90px;
+    }
+  }
+}
+
 .modal__button {
   font-size: 18px;
+  height: 58px;
 
   @media (min-width: @desktop-width) {
     font-size: 21px;
