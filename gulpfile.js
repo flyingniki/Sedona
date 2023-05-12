@@ -117,6 +117,7 @@ const copy = (done) => {
         "source/*.ico",
         "source/img/**/*.svg",
         "!source/img/gallery/*.svg",
+        "source/manifest.webmanifest",
       ],
       {
         base: "source",
