@@ -13,6 +13,10 @@
   padding: 0;
   min-width: @mobile-width;
   background-color: @platinum-bg;
+
+  @media (max-width: @mobile-width-only) {
+    background-color: @white;
+  }
 }
 
 .page__container {
@@ -21,4 +25,8 @@
   margin: auto;
   max-width: @desktop-width;
   box-shadow: 0 5px 15px 0 rgba(@black, 0.2);
+
+  @media (max-width: @mobile-width-only) {
+    width: @mobile-width;
+  }
 }
