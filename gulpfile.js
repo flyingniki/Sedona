@@ -8,10 +8,10 @@ const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
 const terser = require("gulp-terser");
-const imagemin = require("gulp-imagemin");
+const imagemin = import("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
-const del = require("del");
+const del = import("del");
 const sync = require("browser-sync").create();
 
 // Styles
@@ -132,7 +132,7 @@ exports.copy = copy;
 // Clean
 
 const clean = () => {
-  return del("build");
+  return del;
 };
 
 // Server
