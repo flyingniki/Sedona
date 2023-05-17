@@ -1,14 +1,11 @@
-.page {
-  font-family: "PT Sans", sans-serif;
+.page__body {
+  font-family: "PT Sans", "Optima", sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: normal;
   text-transform: uppercase;
   color: @black;
   height: 100%;
-}
-
-.page__body {
   margin: 0;
   padding: 0;
   min-width: @mobile-width;
@@ -24,9 +21,12 @@
   background-color: @white;
   margin: auto;
   max-width: @desktop-width;
-  box-shadow: 0 5px 15px 0 rgba(@black, 0.2);
 
   @media (max-width: @mobile-width-only) {
     width: @mobile-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    box-shadow: 0 5px 15px 0 rgba(@black, 0.2);
   }
 }
