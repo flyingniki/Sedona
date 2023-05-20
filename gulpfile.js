@@ -95,7 +95,7 @@ exports.createWebp = createWebp;
 
 const sprite = () => {
   return gulp
-    .src("source/img/gallery/*.svg")
+    .src("source/img/**/*--inline.svg")
     .pipe(
       svgstore({
         inlineSvg: true,
@@ -116,7 +116,7 @@ const copy = (done) => {
         "source/fonts/*.{woff,woff2}",
         "source/*.ico",
         "source/img/**/*.svg",
-        "!source/img/gallery/*.svg",
+        "!source/img/**/*--inline.svg",
         "source/manifest.webmanifest",
       ],
       {
