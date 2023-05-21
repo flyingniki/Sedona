@@ -25,6 +25,7 @@ const styles = () => {
     .pipe(postcss([autoprefixer(), csso()]))
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("source/css"))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 };
@@ -51,6 +52,7 @@ const scripts = () => {
         suffix: ".min",
       })
     )
+    .pipe(gulp.dest("source/js"))
     .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());
 };
@@ -102,6 +104,7 @@ const sprite = () => {
       })
     )
     .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img"))
     .pipe(gulp.dest("build/img"));
 };
 
